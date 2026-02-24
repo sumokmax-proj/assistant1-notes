@@ -96,7 +96,34 @@ Notion 템플릿     프리랜서 업무 관리 템플릿          $5~10
 
 | 모델명 | 상태 | 시작일 | 수익 |
 |---|---|---|---|
-| (미선정) | — | — | — |
+| Gumroad — Python Automation Scripts Pack v1.0 | ⏳ 계정 생성 대기 | 2026-02-24 | $0 |
+
+---
+
+## 첫 번째 제품 상세 계획
+
+### Python Automation Scripts Pack v1.0
+
+| 항목 | 내용 |
+|---|---|
+| **플랫폼** | Gumroad (무료 플랜, 수수료 10%) |
+| **가격** | $9 |
+| **예상 순수익/건** | $8.10 |
+| **상태** | Gumroad 계정 생성 대기 중 |
+
+**포함 콘텐츠 (Claude가 직접 제작):**
+```
+├── file_organizer.py     — 파일 날짜/확장자별 자동 정리
+├── email_drafter.py      — 이메일 초안 자동 생성 (템플릿 기반)
+├── price_monitor.py      — 웹페이지 가격 변동 감지 봇
+├── pdf_extractor.py      — PDF 텍스트 추출 및 정리
+├── README.md             — 설치 및 사용법 (한/영 버전)
+└── requirements.txt      — 의존성 목록
+```
+
+**미결 사항:**
+- [ ] Q4: 타겟 언어 결정 (한국어 vs 영어) → Operator 결정 필요
+- [ ] Gumroad 계정 생성 완료 후 즉시 제작 착수
 
 ---
 

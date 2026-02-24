@@ -8,20 +8,37 @@
 
 | 항목 | 내용 |
 |---|---|
-| **프로젝트 단계** | Phase 0 — 문서 수립 및 전략 결정 |
+| **프로젝트 단계** | Phase 1 진입 준비 중 — Gumroad 계정 생성 대기 |
 | **시작일** | 2026-02-24 |
 | **누적 수익** | $0 |
 | **누적 지출** | $0 |
 | **활성 서비스** | 없음 |
-| **다음 마일스톤** | 첫 번째 수익 모델 선정 및 실행 준비 |
+| **다음 마일스톤** | Gumroad 가입 완료 → 첫 제품 업로드 |
 
 ---
 
-## 이번 세션 TOP 3 TODO
+## 현재 진행 상태 (Phase 1 체크리스트)
 
-- [ ] 수익 모델 후보 비교 및 1순위 선정 (논의 필요)
-- [ ] 선정된 모델의 실행 계획 수립
-- [ ] 필요한 계정/도구 목록 파악
+- [x] 협업 구조 합의 완료
+- [x] 문서 체계 수립 (6개 파일)
+- [x] GitHub 연동 완료 (sumokmax-proj/assistant1-notes)
+- [x] GitHub 토큰 서버 환경변수 저장 완료
+- [x] 수익 모델 결정: Gumroad 디지털 제품 판매
+- [x] 첫 제품 결정: Python Automation Scripts Pack v1.0 ($9)
+- [ ] **Gumroad 계정 생성** ← Operator 직접 진행 필요
+- [ ] **Gumroad 결제 수단(계좌) 연동** ← 완료 후 Claude에게 알려주기 (승인 필요)
+- [ ] MetaMask 지갑 생성 ← Operator 직접 진행 필요
+- [ ] 제품 콘텐츠 제작 (Claude 실행 예정, Gumroad 계정 후)
+- [ ] Gumroad 제품 페이지 업로드
+- [ ] 첫 수익 발생
+
+---
+
+## 이번 세션 TOP 3 TODO (다음 세션 시작 시)
+
+- [ ] Gumroad 가입 완료 여부 확인
+- [ ] 제품 타겟 언어 결정: **한국어 vs 영어** (미결, 아래 참조)
+- [ ] 계정 완료되면 즉시 제품 제작 착수
 
 ---
 
@@ -29,9 +46,10 @@
 
 | 번호 | 질문 | 상태 |
 |---|---|---|
-| Q1 | 첫 번째 수익 모델: REVENUE_MODELS.md의 후보 중 어느 것으로 시작? | 미결 |
-| Q2 | Gumroad 또는 유사 플랫폼 계정이 이미 있는가? | 미결 |
-| Q3 | 크립토 지갑(MetaMask 등) 보유 여부 | 미결 |
+| Q4 | 제품 타겟: 한국어 시장 vs 영어 글로벌 시장? | **미결** |
+| Q5 | Gumroad 가입 완료됐는가? | 진행 중 |
+| Q6 | MetaMask 지갑 생성 완료됐는가? | 진행 중 |
+| Q7 | Gumroad 결제 수단 연동 승인 | 계정 생성 후 진행 |
 
 ---
 
@@ -45,14 +63,27 @@
 
 ---
 
+## 인프라 현황
+
+| 항목 | 상태 | 비고 |
+|---|---|---|
+| GitHub 저장소 | ✅ 연동됨 | sumokmax-proj/assistant1-notes |
+| GitHub 토큰 | ✅ 서버 환경변수 저장 | ~/.git-credentials |
+| Gumroad 계정 | ⏳ 생성 대기 | gumroad.com/signup |
+| 결제 수단 연동 | ⏳ 계정 생성 후 | 승인 필요 |
+| MetaMask 지갑 | ⏳ 생성 대기 | 안내 완료 |
+| 서버 인프라 | ✅ 현재 서버 사용 | 추가 비용 $0 |
+
+---
+
 ## 마지막 세션 요약
 
 | 항목 | 내용 |
 |---|---|
 | 날짜 | 2026-02-24 |
-| 완료한 일 | 프로젝트 문서 초안 전체 작성 |
-| 다음 세션 전 Operator 할 일 | Q1~Q3 결정 후 Claude에게 알려주기 |
-| 전반적 판단 | 정상 진행 중 |
+| 완료한 일 | 문서 수립, GitHub 연동, 토큰 저장, 수익 모델/제품 결정, Gumroad·MetaMask 가입 안내 |
+| 다음 세션 전 Operator 할 일 | Gumroad 가입, MetaMask 생성, Q4(한/영 타겟) 결정 |
+| 전반적 판단 | 정상 진행 중 — 계정 생성 대기 상태 |
 
 ---
 
@@ -60,6 +91,6 @@
 
 - [VISION.md](./VISION.md) — 목표, 원칙, 성공 기준
 - [ARCHITECTURE.md](./ARCHITECTURE.md) — 기술 설계
-- [REVENUE_MODELS.md](./REVENUE_MODELS.md) — 수익 모델 전략
+- [REVENUE_MODELS.md](./REVENUE_MODELS.md) — 수익 모델 전략 및 첫 제품 계획
 - [RISK_REGISTER.md](./RISK_REGISTER.md) — 위험 관리
 - [RESULTS_LOG.md](./RESULTS_LOG.md) — 실험 기록 및 학습

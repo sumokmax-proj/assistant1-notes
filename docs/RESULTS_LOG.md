@@ -20,24 +20,50 @@
 
 ## Phase 0 — 기반 구축
 
-### [2026-02-24] 프로젝트 시작 및 문서 체계 수립
-- **가설:** 명확한 문서 구조가 있어야 AI-인간 협업이 일관성 있게 진행된다
-- **행동:** MASTER, VISION, ARCHITECTURE, REVENUE_MODELS, RISK_REGISTER, RESULTS_LOG 초안 작성
-- **결과:** 6개 문서 완성. 협업 구조 합의 완료
-- **학습:** Conway 비종속 구조 설계 시 가장 큰 병목은 KYC/결제 수단 연동이 Operator 의존
-- **다음:** Q1~Q3 Operator 결정 후 Phase 1 진입
+### [2026-02-24] 세션 1 — 프로젝트 설계 및 기반 구축
+
+- **행동:**
+  - Conway 비종속 독립적 AI 자립 구조 설계 논의
+  - 협업 구조 확정: Operator(인간) + Navigator(Claude) 역할 분리
+  - 6개 프로젝트 문서 초안 작성 (MASTER / VISION / ARCHITECTURE / REVENUE_MODELS / RISK_REGISTER / RESULTS_LOG)
+  - GitHub 저장소 연동 (sumokmax-proj/assistant1-notes)
+  - GitHub 토큰 서버 환경변수 저장 (git credential helper 설정)
+
+- **결정 사항:**
+  - Q1: 첫 수익 모델 → Gumroad 디지털 제품 판매 ✅
+  - Q2: 초기 예산 → $100 이하, 무료 방법 우선 ✅
+  - Q3: 승인 규칙 → 돈/보안은 Operator 승인 필수, 나머지 Claude 자율 ✅
+  - 첫 제품 → Python Automation Scripts Pack v1.0 ($9) ✅
+
+- **결과:** 기반 완성. Phase 1 진입 직전 상태
+
+- **학습:**
+  - KYC 없이는 결제 수단 연동 불가 → Operator가 Gumroad/결제 계정 필수
+  - Conway 없이도 Gumroad(무료) + 현재 서버로 Phase 1 시작 가능
+  - 가장 빠른 첫 수익 경로: AI 제작 코드 팩 → Gumroad 판매
+
+- **미결 사항:**
+  - Q4: 제품 타겟 언어 (한국어 vs 영어) — Operator 결정 필요
+  - Gumroad 계정 생성 — Operator 직접 진행 필요
+  - MetaMask 지갑 생성 — Operator 직접 진행 필요
 
 ---
 
 ## Phase 1 — 첫 번째 수익 검증
 
-*(실험 기록 예정)*
+### 예정 실험: Python Automation Scripts Pack v1.0
+- **가설:** $9짜리 실용 Python 스크립트 팩이 Gumroad에서 판매될 것이다
+- **계획 행동:** 제품 제작 → Gumroad 업로드 → 마케팅 문구 작성
+- **상태:** Gumroad 계정 생성 대기 중
+- **시작 조건:** Operator의 Gumroad 계정 생성 완료
+
+*(실험 시작 후 결과 기록 예정)*
 
 ---
 
 ## Phase 2 — 시스템화
 
-*(실험 기록 예정)*
+*(Phase 1 완료 후 기록 예정)*
 
 ---
 
@@ -45,10 +71,10 @@
 
 | 항목 | 수치 |
 |---|---|
-| 총 실험 횟수 | 1 |
+| 총 세션 수 | 1 |
+| 총 실험 횟수 | 0 (준비 중) |
 | 성공 실험 | 0 |
 | 실패 실험 | 0 |
-| 진행 중 | 1 |
 | 누적 수익 | $0 |
 | 누적 지출 | $0 |
 | ROI | — |
@@ -57,10 +83,11 @@
 
 ## 주요 교훈 (누적)
 
-| 날짜 | 교훈 | 근거 실험 |
+| 날짜 | 교훈 | 근거 |
 |---|---|---|
-| 2026-02-24 | KYC 없는 결제 연동이 가장 큰 병목 | 문서 설계 과정 |
-| 2026-02-24 | Phase 1은 가장 단순한 모델(Gumroad 디지털 제품)로 시작해야 한다 | 모델 비교 분석 |
+| 2026-02-24 | Phase 1은 Gumroad 디지털 제품이 최적 (비용 $0, 즉시 시작) | 모델 비교 분석 |
+| 2026-02-24 | KYC 병목: 결제 수단 연동은 반드시 Operator가 직접 | 설계 과정 |
+| 2026-02-24 | 제품 타겟 언어 결정이 마케팅 전략 전체에 영향 | 제품 기획 과정 |
 
 ---
 
