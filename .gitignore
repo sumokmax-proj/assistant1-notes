@@ -1,0 +1,10 @@
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.env
+*.tar.gz
+*.zip
+price_monitor_data.json
+price_history.csv
+email_*.txt
