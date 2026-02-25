@@ -51,11 +51,30 @@
 
 ## Phase 1 — 첫 번째 수익 검증
 
+### [2026-02-25] 세션 2 — Gumroad 셋업 완료
+
+- **행동:**
+  - Gumroad 가입 완료 (Creator since 2026-02-24)
+  - Identity Verification 완료
+  - Techcombank 은행 계좌 연동 (CITAD Code: 01310001, 하노이 본점 기준)
+  - Payout Schedule: Weekly / $10 minimum threshold 설정
+  - Pause payouts: OFF 확인 (분홍색=일시정지, 회색=정상)
+
+- **결과:** Gumroad 수익 수령 준비 100% 완료. 제품 업로드만 하면 즉시 판매 가능 상태
+
+- **학습:**
+  - Gumroad Vietnam은 Bank Account 직접 연동 지원 (PayPal 불필요)
+  - 정산 통화: VND (달러→동 환전 후 입금)
+  - Bank Code = CITAD 코드 8자리 형식 (예: 01310001 = 하노이+Techcombank+본점)
+  - Gumroad 최소 정산액: $10 (Vietnam 기준)
+
+- **미결:**
+  - Q4: 제품 타겟 언어 (한국어 vs 영어) — Operator 결정 필요
+
 ### 예정 실험: Python Automation Scripts Pack v1.0
 - **가설:** $9짜리 실용 Python 스크립트 팩이 Gumroad에서 판매될 것이다
 - **계획 행동:** 제품 제작 → Gumroad 업로드 → 마케팅 문구 작성
-- **상태:** Gumroad 계정 생성 대기 중
-- **시작 조건:** Operator의 Gumroad 계정 생성 완료
+- **상태:** Q4 결정 대기 중 → 결정 즉시 제작 착수
 
 *(실험 시작 후 결과 기록 예정)*
 
@@ -71,7 +90,7 @@
 
 | 항목 | 수치 |
 |---|---|
-| 총 세션 수 | 1 |
+| 총 세션 수 | 2 |
 | 총 실험 횟수 | 0 (준비 중) |
 | 성공 실험 | 0 |
 | 실패 실험 | 0 |

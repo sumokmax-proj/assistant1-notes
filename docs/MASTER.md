@@ -8,12 +8,12 @@
 
 | 항목 | 내용 |
 |---|---|
-| **프로젝트 단계** | Phase 1 진입 준비 중 — Gumroad 계정 생성 대기 |
+| **프로젝트 단계** | Phase 1 — 첫 제품 제작 준비 중 |
 | **시작일** | 2026-02-24 |
 | **누적 수익** | $0 |
 | **누적 지출** | $0 |
 | **활성 서비스** | 없음 |
-| **다음 마일스톤** | Gumroad 가입 완료 → 첫 제품 업로드 |
+| **다음 마일스톤** | Q4 결정 → 제품 제작 → Gumroad 업로드 |
 
 ---
 
@@ -25,20 +25,23 @@
 - [x] GitHub 토큰 서버 환경변수 저장 완료
 - [x] 수익 모델 결정: Gumroad 디지털 제품 판매
 - [x] 첫 제품 결정: Python Automation Scripts Pack v1.0 ($9)
-- [ ] **Gumroad 계정 생성** ← Operator 직접 진행 필요
-- [ ] **Gumroad 결제 수단(계좌) 연동** ← 완료 후 Claude에게 알려주기 (승인 필요)
-- [ ] MetaMask 지갑 생성 ← Operator 직접 진행 필요
-- [ ] 제품 콘텐츠 제작 (Claude 실행 예정, Gumroad 계정 후)
+- [x] Gumroad 계정 생성 완료 (2026-02-25)
+- [x] Gumroad Identity Verification 완료
+- [x] Gumroad 결제 수단 연동 완료 (Techcombank, CITAD: 01310001)
+- [x] Gumroad Payout Schedule 설정 완료 (Weekly / $10 threshold)
+- [ ] **Q4 결정: 제품 타겟 언어 (한국어 vs 영어)** ← 미결
+- [ ] 제품 콘텐츠 제작 (Q4 결정 즉시 착수)
 - [ ] Gumroad 제품 페이지 업로드
+- [ ] MetaMask 지갑 생성
 - [ ] 첫 수익 발생
 
 ---
 
 ## 이번 세션 TOP 3 TODO (다음 세션 시작 시)
 
-- [ ] Gumroad 가입 완료 여부 확인
-- [ ] 제품 타겟 언어 결정: **한국어 vs 영어** (미결, 아래 참조)
-- [ ] 계정 완료되면 즉시 제품 제작 착수
+- [ ] **Q4 결정: 한국어 vs 영어 타겟** → 결정 즉시 제품 제작 시작
+- [ ] Python Automation Scripts Pack v1.0 제작 (Claude 실행)
+- [ ] MetaMask 지갑 생성 완료 여부 확인
 
 ---
 
@@ -46,10 +49,8 @@
 
 | 번호 | 질문 | 상태 |
 |---|---|---|
-| Q4 | 제품 타겟: 한국어 시장 vs 영어 글로벌 시장? | **미결** |
-| Q5 | Gumroad 가입 완료됐는가? | 진행 중 |
+| Q4 | 제품 타겟: 한국어 시장 vs 영어 글로벌 시장? | **미결 — 최우선** |
 | Q6 | MetaMask 지갑 생성 완료됐는가? | 진행 중 |
-| Q7 | Gumroad 결제 수단 연동 승인 | 계정 생성 후 진행 |
 
 ---
 
@@ -60,6 +61,7 @@
 - **초기 예산 한도:** $100 (가능하면 무료 방법 우선)
 - **의사결정 원칙:** 실행 → 검증 → 개선 → 실행 반복
 - **수익 모델 교체 기준:** 4주 내 수익 $0이면 모델 재검토
+- **UI 메모:** Gumroad Pause payouts 토글 — 분홍색=일시정지(위험), 회색=정상지급(안전)
 
 ---
 
@@ -68,9 +70,8 @@
 | 항목 | 상태 | 비고 |
 |---|---|---|
 | GitHub 저장소 | ✅ 연동됨 | sumokmax-proj/assistant1-notes |
-| GitHub 토큰 | ✅ 서버 환경변수 저장 | ~/.git-credentials |
-| Gumroad 계정 | ⏳ 생성 대기 | gumroad.com/signup |
-| 결제 수단 연동 | ⏳ 계정 생성 후 | 승인 필요 |
+| GitHub 토큰 | ✅ 서버 저장 | ~/.git-credentials |
+| Gumroad 계정 | ✅ 완료 | Weekly 정산 / Techcombank 연결 |
 | MetaMask 지갑 | ⏳ 생성 대기 | 안내 완료 |
 | 서버 인프라 | ✅ 현재 서버 사용 | 추가 비용 $0 |
 
@@ -80,10 +81,10 @@
 
 | 항목 | 내용 |
 |---|---|
-| 날짜 | 2026-02-24 |
-| 완료한 일 | 문서 수립, GitHub 연동, 토큰 저장, 수익 모델/제품 결정, Gumroad·MetaMask 가입 안내 |
-| 다음 세션 전 Operator 할 일 | Gumroad 가입, MetaMask 생성, Q4(한/영 타겟) 결정 |
-| 전반적 판단 | 정상 진행 중 — 계정 생성 대기 상태 |
+| 날짜 | 2026-02-25 |
+| 완료한 일 | Gumroad 전체 셋업 완료 (가입/인증/Techcombank 연동/Payout 설정) |
+| 다음 세션 전 Operator 할 일 | Q4(한/영 타겟) 결정, MetaMask 생성 |
+| 전반적 판단 | 정상 진행 — 제품 제작만 남은 상태 |
 
 ---
 
