@@ -1,0 +1,12 @@
+# Python Automation Scripts Pack — Dependencies
+# Install all at once: pip install -r requirements.txt
+
+# price_monitor.py
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+
+# pdf_extractor.py
+pymupdf>=1.23.0
+
+# file_organizer.py  → no extra dependencies (standard library only)
+# email_drafter.py   → no extra dependencies (standard library only)
