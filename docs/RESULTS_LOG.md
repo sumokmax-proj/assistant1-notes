@@ -92,6 +92,26 @@
 
 - **다음:** 마케팅 전략 수립 및 실행 → 첫 판매 목표
 
+### [2026-02-28] 세션 4 — Dev.to 마케팅 자동화
+
+- **행동:**
+  - Dev.to 계정 생성 (scriptsmith1, 이메일 alias 방식)
+  - Dev.to API 키 발급 (claude-bot)
+  - API로 블로그 게시 자동화 (curl 방식, Python urllib은 IP 차단)
+  - Dev.to API 키 서버 환경변수 저장 (~/.bashrc)
+
+- **결과:** 블로그 게시 완료
+  - URL: https://dev.to/scriptsmith1/4-python-scripts-i-use-to-automate-my-most-annoying-daily-tasks-ipj
+  - 게시일: 2026-02-28
+
+- **학습:**
+  - Dev.to API는 공식 지원 → 가장 깔끔한 자동화 방법
+  - Python urllib은 서버 IP 차단(403 Forbidden Bots), curl은 통과
+  - Gmail + alias(sumok.max+devto@gmail.com)로 마케팅 계정 개인정보 분리 성공
+  - scriptsmith은 중복으로 scriptsmith1 사용
+
+- **다음:** Reddit 포스팅 → 더 많은 트래픽 유입
+
 ---
 
 ## Phase 2 — 시스템화
@@ -104,7 +124,7 @@
 
 | 항목 | 수치 |
 |---|---|
-| 총 세션 수 | 3 |
+| 총 세션 수 | 4 |
 | 총 실험 횟수 | 1 (진행 중) |
 | 성공 실험 | 0 (판매 대기) |
 | 실패 실험 | 0 |

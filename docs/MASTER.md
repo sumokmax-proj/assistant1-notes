@@ -8,13 +8,14 @@
 
 | 항목 | 내용 |
 |---|---|
-| **프로젝트 단계** | Phase 1 — 제품 라이브, 첫 판매 대기 중 |
+| **프로젝트 단계** | Phase 1 — 제품 라이브 + Dev.to 마케팅 시작 |
 | **시작일** | 2026-02-24 |
 | **누적 수익** | $0 |
 | **누적 지출** | $0 |
 | **활성 서비스** | Python Automation Scripts Pack v1.0 ($9) |
 | **제품 URL** | https://sumokmax.gumroad.com/l/cejui |
 | **다음 마일스톤** | 첫 번째 판매 ($1 이상 수익) |
+| **Dev.to 게시글** | https://dev.to/scriptsmith1/4-python-scripts-i-use-to-automate-my-most-annoying-daily-tasks-ipj |
 
 ---
 
@@ -34,7 +35,8 @@
 - [x] 제품 콘텐츠 제작 완료 (4개 스크립트 + README + requirements.txt)
 - [x] **Gumroad 제품 페이지 업로드 및 발행 완료** (2026-02-25)
 - [ ] 첫 판매 발생
-- [ ] 마케팅 전략 실행 (다음 세션)
+- [x] Dev.to 블로그 게시 완료 (API 자동화)
+- [ ] Reddit 포스팅 (r/Python, r/SideProject)
 - [ ] Gumroad 자동 업로드 자동화 (쿠키 방식)
 - [ ] MetaMask 지갑 생성 (Phase 2 전)
 
@@ -42,9 +44,9 @@
 
 ## 이번 세션 TOP 3 TODO (다음 세션 시작 시)
 
-- [ ] **마케팅 전략 수립 및 실행** — 트래픽 없이는 판매 없음
+- [ ] **Reddit 포스팅** — r/Python, r/SideProject (다음 우선순위)
+- [ ] **판매 현황 점검** — Dev.to 조회수 + Gumroad Analytics 확인
 - [ ] **Gumroad 자동 업로드 자동화** — 쿠키 방식 구현
-- [ ] 판매 현황 점검 (수익 $0이면 마케팅 강화)
 
 ---
 
@@ -52,7 +54,7 @@
 
 | 번호 | 질문 | 상태 |
 |---|---|---|
-| Q8 | 마케팅 채널 선택: Reddit? Twitter/X? Hacker News? 기타? | **미결** |
+| Q8 | Reddit 계정 생성 (scriptsmith1 사용 예정) | **미결** |
 | Q6 | MetaMask 지갑 생성 | Phase 2 전까지 보류 |
 
 ---
@@ -76,6 +78,8 @@
 | GitHub 토큰 | ✅ 서버 저장 | ~/.git-credentials |
 | Gumroad 제품 | ✅ 라이브 | sumokmax.gumroad.com/l/cejui |
 | Gumroad 정산 | ✅ 설정됨 | Weekly / Techcombank |
+| Dev.to API | ✅ 저장됨 | ~/.bashrc DEVTO_API_KEY |
+| Dev.to 게시글 | ✅ 라이브 | scriptsmith1 계정 |
 | Gumroad 자동화 | ⏳ 미구현 | 쿠키 방식 — 다음 세션 |
 | MetaMask 지갑 | ⏳ 보류 | Phase 2 전 생성 예정 |
 | 서버 인프라 | ✅ 사용 중 | 추가 비용 $0 |
@@ -86,10 +90,10 @@
 
 | 항목 | 내용 |
 |---|---|
-| 날짜 | 2026-02-25 |
-| 완료한 일 | 제품 Gumroad 발행 완료, 커버 이미지 제작, 세션 쿠키 자동화 방향 결정 |
-| 다음 세션 할 일 | 마케팅 전략 실행, Gumroad 자동화(쿠키) 구현 |
-| 전반적 판단 | 정상 진행 — 제품 라이브, 이제 트래픽/판매가 과제 |
+| 날짜 | 2026-02-28 |
+| 완료한 일 | Dev.to 블로그 API 자동 게시, Dev.to API 키 저장, Dev.to 계정(scriptsmith1) 생성 |
+| 다음 세션 할 일 | Reddit 포스팅, 판매 현황 점검, Gumroad 자동화 |
+| 전반적 판단 | 정상 진행 — 마케팅 채널 1개 확보, 계속 확장 중 |
 
 ---
 
