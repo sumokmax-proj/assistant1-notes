@@ -1,7 +1,27 @@
 # MASTER.md — AI 자립 프로젝트 현황판
 
-> **새 환경에서 시작할 때:** 이 파일을 먼저 읽고 SETUP.md로 환경 복원 후 작업 시작.
 > 매 세션 시작 시 Claude가 반드시 읽고, 세션 종료 시 반드시 업데이트한다.
+
+---
+
+## 🚀 새 서버 빠른 시작 (3단계)
+
+```bash
+# 1. 코드 받기
+git clone https://github.com/sumokmax-proj/assistant1-notes.git hustle1
+cd hustle1
+
+# 2. 환경변수 설정 (토큰 2개 — Operator에게 확인)
+echo 'export GITHUB_TOKEN="<GitHub PAT>"' >> ~/.bashrc
+echo 'export DEVTO_API_KEY="<Dev.to API 키>"' >> ~/.bashrc
+source ~/.bashrc
+
+# 3. Git 자격증명
+git config --global credential.helper store
+echo "https://sumokmax-proj:${GITHUB_TOKEN}@github.com" > ~/.git-credentials
+```
+
+> **그 다음 Claude에게:** `"MASTER.md 읽고 이어서 진행해줘"` — 이것만 하면 됨.
 
 ---
 
