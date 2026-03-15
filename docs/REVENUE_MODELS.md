@@ -96,11 +96,11 @@ Notion 템플릿     프리랜서 업무 관리 템플릿          $5~10
 
 | 모델명 | 상태 | 시작일 | 수익 |
 |---|---|---|---|
-| Gumroad — Python Automation Scripts Pack v1.0 | ⏳ 계정 생성 대기 | 2026-02-24 | $0 |
+| Gumroad — Python Automation Scripts Pack v1.0 | ✅ 라이브 | 2026-02-25 | $0 (판매 대기) |
 
 ---
 
-## 첫 번째 제품 상세 계획
+## 첫 번째 제품 상세
 
 ### Python Automation Scripts Pack v1.0
 
@@ -109,7 +109,11 @@ Notion 템플릿     프리랜서 업무 관리 템플릿          $5~10
 | **플랫폼** | Gumroad (무료 플랜, 수수료 10%) |
 | **가격** | $9 |
 | **예상 순수익/건** | $8.10 |
-| **상태** | Gumroad 계정 생성 대기 중 |
+| **상태** | ✅ 라이브 (2026-02-25) |
+| **제품 URL** | https://sumokmax.gumroad.com/l/cejui |
+| **Gumroad 계정** | sumokmax (sumok.max@gmail.com, Google 로그인) |
+| **정산 계좌** | Techcombank (CITAD: 01310001, 하노이 본점) |
+| **정산 주기** | 매주 / 최소 $10 |
 
 **포함 콘텐츠 (Claude가 직접 제작):**
 ```
@@ -117,13 +121,22 @@ Notion 템플릿     프리랜서 업무 관리 템플릿          $5~10
 ├── email_drafter.py      — 이메일 초안 자동 생성 (템플릿 기반)
 ├── price_monitor.py      — 웹페이지 가격 변동 감지 봇
 ├── pdf_extractor.py      — PDF 텍스트 추출 및 정리
-├── README.md             — 설치 및 사용법 (한/영 버전)
+├── README.md             — 설치 및 사용법 (영어)
 └── requirements.txt      — 의존성 목록
 ```
 
-**미결 사항:**
-- [ ] Q4: 타겟 언어 결정 (한국어 vs 영어) → Operator 결정 필요
-- [ ] Gumroad 계정 생성 완료 후 즉시 제작 착수
+---
+
+## 마케팅 현황
+
+| 채널 | 상태 | 게시일 | URL |
+|---|---|---|---|
+| Dev.to | ✅ 라이브 | 2026-02-28 | https://dev.to/scriptsmith1/4-python-scripts-i-use-to-automate-my-most-annoying-daily-tasks-ipj |
+| Reddit | ⏳ 예정 | 다음 세션 | r/SideProject, r/Python 타겟 |
+| Hacker News | ⏳ 예정 | 다음 세션 | Show HN 형식 |
+
+**Dev.to 계정:** scriptsmith1 (sumok.max+devto@gmail.com)
+**Dev.to 자동화:** curl + API 키 (Python urllib은 서버 IP 차단됨)
 
 ---
 

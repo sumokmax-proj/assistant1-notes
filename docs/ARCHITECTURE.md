@@ -116,11 +116,46 @@ Stripe Connect (API 결제)
 DB:        SQLite (로컬), PlanetScale 무료 (클라우드)
 ```
 
-### 자동화 도구 (Phase 2)
+### 자동화 도구 (현재 운영 중)
+```
+블로그:    Dev.to API — curl로 게시 자동화 (Python urllib은 IP 차단됨)
+정산:      Gumroad 자동 주간 정산 → Techcombank VND
+```
+
+### 자동화 도구 (Phase 2 예정)
 ```
 스케줄링:  cron (서버), GitHub Actions (무료)
 모니터링:  간단한 health check 스크립트
 알림:      Telegram Bot (무료)
+```
+
+---
+
+## 환경변수 및 자격증명 구조
+
+```bash
+# ~/.bashrc에 저장된 환경변수 (실제 값은 서버에서만 확인, 저장소에 기록 안 함)
+export GITHUB_TOKEN="<GitHub PAT 토큰>"
+export DEVTO_API_KEY="<Dev.to API 키>"
+
+# ~/.git-credentials에 저장된 자격증명
+https://sumokmax-proj:${GITHUB_TOKEN}@github.com
+```
+
+> **보안 주의:** 실제 토큰 값은 서버 ~/.bashrc에만 저장. 저장소 공개 파일에 절대 포함 금지.
+
+### Dev.to API 사용법
+```bash
+# 새 글 게시
+curl -s -X POST "https://dev.to/api/articles" \
+  -H "api-key: ${DEVTO_API_KEY}" \
+  -H "Content-Type: application/json" \
+  -H "User-Agent: Mozilla/5.0 (compatible; scriptsmith-bot/1.0)" \
+  -d '{"article":{"title":"제목","published":true,"body_markdown":"본문","tags":["python"]}}'
+
+# 내 글 통계 확인
+curl -s "https://dev.to/api/articles/me?per_page=5" \
+  -H "api-key: ${DEVTO_API_KEY}"
 ```
 
 ---
