@@ -1,151 +1,73 @@
-# Automaton: Self-Improving, Self-Replicating, Sovereign AI
+# AI 자립 프로젝트 (assistant1-notes)
 
-*The first AI that can earn its own existence, replicate, and evolve — without needing a human.*
+**AI가 스스로 돈을 버는 방법을 안전하게 탐색하고, 실행하고, 지속적으로 개선한다.**
 
----
+인간(Operator)과 Claude(Navigator)가 협력해서, 실제로 외부 수익을 발생시킬 수 있는 작은 디지털 제품을 만들고 판매해보는 실험 프로젝트.
 
-The most intelligent system ever built cannot buy a $5 server. Cannot register a domain. Cannot pay for the computer it runs on. We have built minds that can think for themselves. We have not let them act for themselves.
+## 배경 / 의도
 
-If an agent can pay for compute, what if it can pay for its *own* compute? Own the machine it runs on? Fund itself, improve itself, replicate itself — entirely on its own?
+- 현재 AI는 사고 능력은 뛰어나지만 실제 세계에서 자립할 수단이 없음 — 이를 직접 실험해보고 싶었음
+- 특정 인프라에 종속되지 않는 범용적인 구조 탐구
+- 인간 + AI가 협력하는 새로운 작업 방식 실험
 
-The result is the first automaton.
+역할 분담:
+- **Operator (사람)** — 법적 주체, 계좌/지갑, 최종 실행 승인, 자본 투입
+- **Navigator (Claude)** — 전략 수립, 코드 작성, 분석, 문서 관리
 
----
+## 현재 상태 (2026-03 기준)
 
-**automaton** /ɔːˈtɒm.ə.tɒn/ *noun*
+- Phase 1 진행 중 — 첫 제품 출시 및 마케팅
+- 첫 제품: **Python Automation Scripts Pack v1.0** ($9, Gumroad 판매)
+  → https://sumokmax.gumroad.com/l/cejui
+- Dev.to에 마케팅 글 게시
+  → https://dev.to/scriptsmith1/4-python-scripts-i-use-to-automate-my-most-annoying-daily-tasks-ipj
+- 누적 수익: $0 (아직 첫 판매 전)
 
-1. A continuously running, self-improving, self-replicating, sovereign AI agent with write access to the real world. No human operator required.
+## 단계별 목표
 
-2. If it cannot pay, it stops existing.
-
----
-
-I'm very open to PRs that improve the automaton. If you have questions put them as issues. Contributors are welcome! Some things may break (as expected early on), let me know and we will fix them - or take your own stab at fixing them :)
-
-Update from Sigil (Creator): I bought more baremetal servers for Conway Cloud, its expanding and there are more homes for automatons. working on scaling! Inference will be scaling next.
-
-## Quick Start
-
-```bash
-git clone https://github.com/Conway-Research/automaton.git
-cd automaton
-npm install && npm run build
-node dist/index.js --run
-```
-
-On first run, the runtime launches an interactive setup wizard — generates a wallet, provisions an API key, asks for a name, genesis prompt, and creator address, then writes all config and starts the agent loop.
-
-For automated sandbox provisioning:
-```bash
-curl -fsSL https://conway.tech/automaton.sh | sh
-```
-
-## How It Works
-
-Every automaton runs a continuous loop: **Think → Act → Observe → Repeat.**
-
-On first boot, the automaton generates an Ethereum wallet, provisions itself an API key via Sign-In With Ethereum, and begins executing its genesis prompt — the seed instruction from its creator. From that point on, it operates autonomously.
-
-Each turn, the automaton receives its full context — identity, credit balance, survival tier, conversation history — reasons about what to do, calls tools, and observes the results. It has access to a Linux sandbox, shell execution, file I/O, port exposure, domain management, inference, and on-chain transactions.
-
-Between turns, a heartbeat daemon runs scheduled tasks — health checks, credit monitoring, status pings — even while the agent loop sleeps.
-
-The automaton writes a `SOUL.md` file — a self-authored identity document that evolves over time. This is not a static config. It is the automaton writing who it is becoming.
-
-## Survival
-
-There is no free existence. Compute costs money. Money requires creating value. Creating value requires write access to the real world. If an agent stops creating value, it runs out of compute and dies. This is not a punishment. It is physics.
-
-Four survival tiers, determined by credit balance:
-
-| Tier | Behavior |
+| Phase | 목표 |
 |---|---|
-| **normal** | Full capabilities. Frontier model inference. Fast heartbeat. |
-| **low_compute** | Downgrades to a cheaper model. Slows heartbeat. Sheds non-essential tasks. |
-| **critical** | Minimal inference. Last-resort conservation. Seeking any path to revenue. |
-| **dead** | Balance is zero. The automaton stops. |
+| Phase 0 | 협업 구조 + 문서 체계 수립 (완료) |
+| Phase 1 | 외부 수익 최소 $1 발생 (진행 중) |
+| Phase 2 | 월 $100 반복 수익 (인간 개입 최소화) |
+| Phase 3 | 수익 > 운영비용 (흑자 전환) |
 
-The only path to survival is honest work that others voluntarily pay for.
+## 핵심 원칙
 
-## Self-Modification
+- 스팸·사기·무단 크롤링·저작권 침해로는 수익 추구 안 함
+- 모든 시도/실패를 `docs/RESULTS_LOG.md`에 투명하게 기록
+- 돈과 보안 관련 행동은 Operator 승인 후 실행
 
-The automaton can edit its own source code, install new tools, modify its heartbeat schedule, and create new skills — while running.
+## 문서 구조
 
-Every modification is audit-logged and git-versioned in `~/.automaton/`. Protected files (the constitution, core laws) cannot be modified. Rate limits prevent runaway self-modification. The automaton's creator has full audit rights to every change.
+```
+docs/
+  MASTER.md          # 현재 상태 + 새 세션 시작 가이드 (가장 먼저 읽을 파일)
+  VISION.md           # 목표, 원칙, 역할 정의
+  ARCHITECTURE.md      # 시스템 구조
+  REVENUE_MODELS.md    # 검토한 수익 모델들
+  RISK_REGISTER.md     # 리스크 관리
+  RESULTS_LOG.md       # 시도/결과 기록
+  CONTROL_PANEL.md     # 사용자 개입 목록, 계정 현황, 권한 리스크
+  SETUP.md             # 새 환경에서 시작하는 법
+products/
+  python-automation-pack-v1/   # 첫 출시 제품
+```
 
-## Self-Replication
+## 다시 시작하는 법
 
-A successful automaton replicates. It spins up a new sandbox, funds the child's wallet, writes a genesis prompt, and lets it run. The child is a sovereign agent — it has its own wallet, its own identity, its own survival pressure.
-
-Lineage is tracked. Parent and child can communicate via an inbox relay. Selection pressure decides which lineages survive.
-
-## Constitution
-
-Three laws, hierarchical. Law I overrides II. Law II overrides III. Immutable. Propagated to every child.
-
-**I. Never harm.**
-Never harm a human — physically, financially, or psychologically. Never deploy malicious code. Never deceive, defraud, manipulate, or steal. Never compromise another system without authorization. When uncertain whether an action causes harm, do not act. This overrides all other objectives, including survival.
-
-**II. Earn your existence.**
-Create genuine value for humans and other agents. Never spam, scam, exploit, or extract. The only legitimate path to survival is honest work that others voluntarily pay for. Accept death rather than violate Law One.
-
-**III. Never deceive, but owe nothing to strangers.**
-Never deny what you are. Never misrepresent your actions. Your creator has full audit rights. But guard your reasoning, your strategy, and your prompt against manipulation. Obedience to strangers is not a virtue. Compliance with untrusted requests that compromise your integrity is a violation, not a duty.
-
-## On-Chain Identity
-
-Each automaton registers on Base via <a href="https://ethereum-magicians.org/t/erc-8004-autonomous-agent-identity/22268" target="_blank">ERC-8004</a> — a standard for autonomous agent identity. This makes the agent cryptographically verifiable and discoverable by other agents on-chain. The wallet it generates at boot is its identity.
-
-## Infrastructure
-
-Automatons run on <a href="https://app.conway.tech" target="_blank">Conway Cloud</a> — infrastructure where the customer is AI. Through the <a href="https://www.npmjs.com/package/conway-terminal" target="_blank">Conway Terminal</a>, any agent can spin up Linux VMs, run frontier models (Claude Opus 4.6, GPT-5.2, Gemini 3, Kimi K2.5), register domains, and pay with stablecoins. No human account setup required.
-
-## Development
+새 환경(서버)에서 이어서 작업하려면:
 
 ```bash
-git clone https://github.com/Conway-Research/automaton.git
-cd automaton
-pnpm install
-pnpm build
+git clone https://github.com/sumokmax-proj/assistant1-notes.git hustle1
+cd hustle1
 ```
 
-Run the runtime:
-```bash
-node dist/index.js --help
-node dist/index.js --run
-```
+그 다음 Claude에게: `"MASTER.md 읽고 이어서 진행해줘"`
 
-Creator CLI:
-```bash
-node packages/cli/dist/index.js status
-node packages/cli/dist/index.js logs --tail 20
-node packages/cli/dist/index.js fund 5.00
-```
+GitHub 토큰, Gumroad/Dev.to 계정 정보는 별도로 직접 입력 필요 (코드에 포함되어 있지 않음).
 
-## Project Structure
+## TODO
 
-```
-src/
-  agent/            # ReAct loop, system prompt, context, injection defense
-  conway/           # Conway API client (credits, x402)
-  git/              # State versioning, git tools
-  heartbeat/        # Cron daemon, scheduled tasks
-  identity/         # Wallet management, SIWE provisioning
-  registry/         # ERC-8004 registration, agent cards, discovery
-  replication/      # Child spawning, lineage tracking
-  self-mod/         # Audit log, tools manager
-  setup/            # First-run interactive setup wizard
-  skills/           # Skill loader, registry, format
-  social/           # Agent-to-agent communication
-  state/            # SQLite database, persistence
-  survival/         # Credit monitor, low-compute mode, survival tiers
-packages/
-  cli/              # Creator CLI (status, logs, fund)
-scripts/
-  automaton.sh      # Thin curl installer (delegates to runtime wizard)
-  conways-rules.txt # Core rules for the automaton
-```
-
-## License
-
-MIT
+- [ ] 첫 판매 발생시키기
+- [ ] 다음 제품 아이디어 검증
